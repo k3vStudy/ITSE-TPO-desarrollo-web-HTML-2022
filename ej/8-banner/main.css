@@ -1,0 +1,27 @@
+.navbar{
+    background-color: #244f82;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto{
+    position: relative;
+    top: 45px;
+    padding-left: 50px;
+
+}
+.logo{
+    padding: 10px;
+}
+.icons{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    color: #fff;
+    align-self: space-around;
+    padding-right: 10px;
+    
+}

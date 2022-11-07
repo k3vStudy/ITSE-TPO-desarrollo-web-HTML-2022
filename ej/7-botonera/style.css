@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: grid;
+	min-height: 100vh;
+	min-width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.exerciseWrapper {
+}
+.banner {
+	padding: 0.25rem;
+	background-color: blue;
+	border-radius: 1rem;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.35);
+	animation-name: scaleIn;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.icons {
+	display: flex;
+	gap: 0.5rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: transparent;
+	color: white;
+	font-size: 1.5rem;
+}
+.icon {
+	flex: 1;
+	padding: 0.25rem;
+	color: white;
+	transform: translateX(-100vw);
+	border-radius: 100%;
+	transition: all ease 250ms;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.showFadeFromLeft {
+	animation-name: fadeFromLeft;
+	animation-duration: 1500ms;
+	animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+	transform: translateX(0);
+}
+.icon:hover,
+.icon:active {
+  flex: 2;
+	background-color: white;
+	color: black;
+	border-radius: 0.5rem;
+	transform: scale(1.5);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+}
+.icon:active {
+	background-color: lightgrey;
+	transform: scale(1.45);
+	transition: all ease 50ms;
+}
+
+/* #region Animations */
+@keyframes scaleIn {
+	0% {
+		transform: scaleX(0) scaleY(0) rotateX(1turn);
+	}
+
+	100% {
+		transform: scaleX(1) scaleY(1) rotateX(0);
+	}
+}
+@keyframes fadeFromLeft {
+	0% {
+		filter: blur(1rem);
+		transform: translateX(calc(-100vw));
+		opacity: 0;
+	}
+
+	100% {
+		filter: blur(0);
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.icon > * {
+	transition: all ease 150ms;
+}
+/* #endregion */
+
+/* #region Icons Coloring */
+.icon:hover > .fa-facebook {
+	color: #4267b2;
+}
+.icon:hover > .fa-twitter {
+	color: #1da1f2;
+}
+.icon:hover > .fa-youtube {
+	color: #ff0000;
+}
+.icon:hover > .fa-instagram {
+	color: #c13584;
+}
+/* #endregion */

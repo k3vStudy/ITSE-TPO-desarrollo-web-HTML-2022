@@ -1,0 +1,4 @@
+Nota:
+Voy a usar github pages para hostear los ejercicios debido a que netlify solo da 1 horade uptime sin una cuenta.
+Url:
+https://moonlit-parfait-cfd049.netlify.app/
