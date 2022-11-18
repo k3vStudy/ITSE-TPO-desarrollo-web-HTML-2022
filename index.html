@@ -1,14 +1,172 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
-  <title>Hello World</title>
-</head>
-<body>
-  <h1>Hello World</h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+		<link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
+		<link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
+		<link href="assets/fontawesome/css/solid.css" rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="main.js"></script>
+		<title>Hello World Corporation | El software del futuro</title>
+	</head>
+	<body>
+		<header class="presentation" id="home">
+			<div class="presentationDescription">
+				<h1>
+					La solución para
+					<a href="#yourBusiness" class="highlightBlue yourBusiness"
+						>tu negocio</a
+					>
+					está aquí
+				</h1>
+				<p>Una solución todo en uno integrada y en la nube</p>
+				<p>diseñada para simplificarte la vida</p>
+			</div>
+			<a href="#">
+				<img class="imgLogo" src="assets/logo.png" alt="Logo de la empresa" />
+			</a>
+		</header>
+
+		<div id="aboutUs">
+			<h1>¿Quienes somos?</h1>
+			<p>
+				Somos una empresa líder en el mercado, centrada en distribuir
+				experiencias digitales sin precedentes.
+			</p>
+			<p>
+				Trabajamos con más de 500 usuarios activos cada día mejorando sus
+				workloads y simplificando sus vidas
+			</p>
+			<p>
+				Nuestro sistema ha reportado más de 100 casos de éxito donde ha mejorado
+				drásticamente la organización y la gestión de empresas
+			</p>
+			<br />
+			<h1>¿De que es capaz el sistema?</h1>
+			<br />
+			<div class="flex f-wrap justify-center">
+				<div class="card">
+					<h1>Control de stock</h1>
+					<i class="fa-solid fa-warehouse"></i>
+					<p>
+						Posee un complejo sistema de control de stock que te permite
+						administrar múltiples almacenes
+					</p>
+				</div>
+
+				<div class="card">
+					<h1>Gestión de Usuarios</h1>
+					<i class="fa-solid fa-user"></i>
+					<p>
+						Incorpora un sistema de permisos y roles para que puedas decidir
+						quién tiene acceso y quien no, todo sin complicaciones
+					</p>
+				</div>
+
+				<div class="card">
+					<h1>Gestión de Productos Avanzada</h1>
+					<i class="fa-solid fa-cart-shopping"></i>
+					<p>
+						Incorpora un extenso abanico de funciones para gestionar tus
+						productos, edita en masa, importa desde excel u sistemas e-commerce,
+						genera informes, genera instantáneas listas para postear en redes
+						sociales y más.
+					</p>
+				</div>
+
+				<div class="card">
+					<h1>REST API</h1>
+					<i class="fa-solid fa-network-wired"></i>
+					<p>
+						¿Necesitas comunicarte con otros sistemas? hello world system tiene
+						incorporada una REST API para hacer todas las integraciones
+						necesarias y simplificar aún más el proceso de hacer crecer tu
+						negocio
+					</p>
+				</div>
+			</div>
+			<br />
+			<iframe
+				
+				src="https://www.youtube.com/embed/4qzHzs3yX1c"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</div>
+		<div id="pricing">
+			<h1>Precios</h1>
+			<br />
+			<div class="priceCards">
+				<div class="card">
+					<h1>Starter Pack</h1>
+					<ul>
+						<li>Control de stock</li>
+						<li>Único Usuario</li>
+						<li>Gestión de productos</li>
+						<li>POI único</li>
+					</ul>
+					<p>$2.000 Mensual</p>
+				</div>
+				<div class="card">
+					<h1>Emprendedor</h1>
+					<ul>
+						<li>Control de Stock Avanzado</li>
+						<li>Múltiples usuarios</li>
+						<li>Gestión de productos avanzada</li>
+						<li>Múltiples POIs</li>
+					</ul>
+					<p>$5.000 Mensual</p>
+				</div>
+				<div class="card">
+					<h1>PyME</h1>
+					<ul>
+						<li>Todo lo de la clase Emprendedor +</li>
+						<li>Gestión de stock en masa</li>
+						<li>Gestión de productos en masa</li>
+						<li>Sistema de almacenes (stock en diferentes almacenes)</li>
+					</ul>
+					<p>$10.000 Mensual</p>
+				</div>
+				<div class="card">
+					<h1>Business</h1>
+					<ul>
+						<li>Todo lo de la clase PyME +</li>
+						<li>REST API</li>
+						<li>Soporte instantáneo</li>
+						<li>Servidores premium</li>
+						<li>Acceso unificado (SSO)</li>
+						<li>Integraciones prefabricadas (+50 integraciones)</li>
+					</ul>
+					<p>$50.000 Mensual</p>
+				</div>
+			</div>
+		</div>
+		<div id="contact">
+			<h1>¿Te interesa saber más?</h1>
+			<p>Los valores con * son obligatorios</p>
+			<form action="#">
+				<label for="customer_name">Nombre* </label>
+				<input type="text" name="customer_name" id="customer_name" required />
+				<label for="email_address">Email* </label>
+				<input type="email" name="email_address" id="email_address" />
+				<label for="comments">Consulta</label>
+				<textarea name="comments" id="comments" maxlength="500"></textarea>
+				<input type="submit" id="submit_form" />
+			</form>
+		</div>
+		<footer>
+			<b>Copyright 2022 Kevin Vicente - Todos los derechos reservados</b>
+			<nav>
+				<a href="#home">Inicio</a>
+				<a href="#aboutUs">Acerca de</a>
+				<a href="#pricing">Precios</a>
+				<a href="#contact">Contacto</a>
+			</nav>
+		</footer>
+	</body>
 </html>
