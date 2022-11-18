@@ -1,0 +1,23 @@
+.main{
+    background-color: #d7e0fa;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.album{
+    background-color: #d7e0fa;
+    display:grid;
+    grid-template-columns: repeat(3,2fr);
+}
+.images{
+    color:#c7c6c6;
+    text-align: center;
+    background-color: #dbdbdb;
+    border: 20px solid #d7e0fa;
+    width: 250px;
+    height: 10em;
+    padding-top: 20%;
+    
+}
